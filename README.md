@@ -218,7 +218,7 @@ Consulta de veículos utilizando GET /veiculos
 Validação de preço
 Validação de ano
 
-## Demostração
+## Demonstração
 
 **Cadastro de veículos**
 ![Cadastro de veículo](docs/images/post-veiculo.png)
