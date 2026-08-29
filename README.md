@@ -173,6 +173,29 @@ Resposta:
 ]
 ```
 
+## Buscar veículo por ID
+**GET /veiculos/{id}**
+
+Retorna os dados de um veículo específico a partir do seu ID.
+
+URL:
+
+```bash
+http://localhost:8080/veiculos/{id}
+```
+
+Reposta:
+
+```json
+{
+    "id": 1,
+    "marca": "Volkswagen",
+    "modelo": "Gol",
+    "ano": 2015,
+    "preco": 35000.0
+}
+```
+
 ## Regras de negócio
 
 O sistema possui algumas validações para o cadastro de veículos.
@@ -217,6 +240,9 @@ Cadastro de veículos utilizando POST /veiculos
 Consulta de veículos utilizando GET /veiculos
 Validação de preço
 Validação de ano
+Busca de veículo por ID utilizando `GET /veiculos/{id}`
+Retorno `200 OK` para veículo encontrado
+Retorno `404 Not Found` para veículo não encontrado
 
 ## Demonstração
 
@@ -231,6 +257,12 @@ Validação de ano
 
 **Validação de ano**
 ![Validação de ano](docs/images/validacao-ano.png)
+
+**Busca por ID**
+![Validação de ano](docs/images/get-veiculo-id.png)
+
+**Busca por ID não encontrado**
+![Validação de ano](docs/images/veiculo-nao-encontrado.png)
 
 ## Observações
 

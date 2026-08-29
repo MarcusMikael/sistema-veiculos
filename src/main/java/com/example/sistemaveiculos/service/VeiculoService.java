@@ -37,4 +37,8 @@ public class VeiculoService {
         return veiculoRepository.listarVeiculos();
     }
 
+    public Veiculo buscarPorId(Long id) {
+        return veiculoRepository.buscarPorId(id);
+    }
+
 }

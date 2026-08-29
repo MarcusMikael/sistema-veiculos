@@ -24,5 +24,14 @@ public class VeiculoRepository {
     public List<Veiculo> listarVeiculos() {
         return veiculos;
     }
+
+    public Veiculo buscarPorId(long id) {
+        for (Veiculo veiculo : veiculos) {
+            if (veiculo.getId() == id) {
+                return veiculo;
+            }
+        }
+        return null;
+    }
     
 }
